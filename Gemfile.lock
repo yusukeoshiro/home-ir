@@ -1,0 +1,14 @@
+GEM
+  specs:
+    dotenv (2.2.1)
+    redis (3.3.3)
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  dotenv
+  redis
+
+BUNDLED WITH
+   1.15.3
