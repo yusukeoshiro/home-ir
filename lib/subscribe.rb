@@ -24,6 +24,8 @@ $redis = Redis.new(url: ENV["REDIS_URL"])
 
 $redis.subscribe('ir_request') do |on|
 	on.message do |channel, msg|
+		p "detected new signal request..."
+		p msg
 		send_ir_signal msg
 	end
 end
