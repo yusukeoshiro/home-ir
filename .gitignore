@@ -1,1 +1,4 @@
 .env
+
+
+REDIS_URL=redis://h:pe2ec0003e0fedeed8b316e63084a57bbfcc222ef4a5c9a5f9dd635002796a88d@ec2-54-86-200-206.compute-1.amazonaws.com:7229
