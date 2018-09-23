@@ -21,8 +21,10 @@ def send_ir_signal( ip_address, payload )
 end 
 
 
-$redis = Redis.new(url: ENV["REDIS_URL"])
 
+puts "starting subscriber...."
+puts "redis is at #{ENV["REDIS_URL"]}"
+$redis = Redis.new(url: ENV["REDIS_URL"])
 $redis.subscribe('ir_request') do |on|
 	on.message do |channel, msg|
 		begin
